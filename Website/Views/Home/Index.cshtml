@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ Html.RenderAction("slider", "Home");}
+
+@{ Html.RenderAction("boxes", "Home");}
+
+<div id="hot">
+    <!-- #hot Begin -->
+
+    <div class="box">
+        <!-- box Begin -->
+
+        <div class="container">
+            <!-- container Begin -->
+
+            <div class="col-md-12">
+                <!-- col-md-12 Begin -->
+
+                <h2>
+                    <strong> Sản phẩm mới nhất </strong>
+                </h2>
+
+            </div><!-- col-md-12 Finish -->
+
+        </div><!-- container Finish -->
+
+    </div><!-- box Finish -->
+
+</div><!-- #hot Finish -->
+
+@{ Html.RenderAction("lastestProduct", "Home");}
+<!-- container Finish -->
